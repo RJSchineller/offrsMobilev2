@@ -13,8 +13,15 @@
 </ion-header>
 
 
-<ion-content padding class="main-background">
-This is my login page
-
-go to <button [navPush]="homePage">Home</button>
+<ion-content padding class="login-content main-background">
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="../../assets/img/offrs-logo-square.png">
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box">
+    This is my login pagego to <button [navPush]="homePage">Home</button>
+  </div>
 </ion-content>
