@@ -17,3 +17,11 @@ export class HomePage {
   }
 
 }
+
+@Component({
+  selector: 'date-pipe',
+  template: '<p>{{Today | Date}}</p>'
+})
+export class DatePipeComponent{
+  today: number = Date.now();
+}

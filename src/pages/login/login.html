@@ -6,13 +6,15 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar *navbar>
     <ion-title>login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="main-background">
+This is my login page
 
+go to <button [navPush]="homePage">Home</button>
 </ion-content>
