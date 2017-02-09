@@ -9,3 +9,8 @@ There is a bunch of stuff to work on:
 2. Write provider to offrs
 3. locally store info
 4. More to come....
+
+
+CHANGELOG:
+
+v0.0.1 - Added support for logging in via offrs credentials Nobody except clients can get past login screen
