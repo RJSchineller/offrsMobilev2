@@ -17,11 +17,32 @@
   <ion-row class="logo-row">
     <ion-col></ion-col>
     <ion-col width-67>
-      <img src="../../assets/img/offrs-logo-square.png">
+      <img src="../assets/img/offrs-logo-square.png">
     </ion-col>
     <ion-col></ion-col>
   </ion-row>
   <div class="login-box">
-    This is my login pagego to <button [navPush]="homePage">Home</button>
+    <form (ngSubmit)="onLoginSubmit()">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            <ion-item>
+              <ion-input type="text" placeholder="Email" name="logEmail" [(ngModel)]="logEmail" required></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-input type="password" placeholder="Password" name="LogPassword" [(ngModel)]="logPassword" required></ion-input>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full type="submit">Login</button>
+        </ion-col>
+      </ion-row>
+    </form>
   </div>
 </ion-content>
