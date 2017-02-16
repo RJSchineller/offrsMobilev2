@@ -13,12 +13,20 @@
 </ion-header>
 
 
-<ion-content padding class="login-content main-background">
+<!--<ion-content padding class="login-content main-background">
   <ion-row class="logo-row">
     <ion-col></ion-col>
     <ion-col width-67>
       <img src="assets/img/offrs-logo-square.png">
     </ion-col>
+    <div class="text-center">
+									<a href="#" class="display-inline-block">
+										<img src="assets/img/placeholder.jpg" class="img-circle img-responsive" alt="this is alt" style="width: 100px; height: 100px;">
+									</a>
+
+									<h5 class="content-group">Login to your account <small class="display-block">Enter your credentials below</small></h5>
+								</div>
+    <h2>RAIA</h2>
     <ion-col></ion-col>
   </ion-row>
   <div class="login-box">
@@ -45,4 +53,39 @@
       </ion-row>
     </form>
   </div>
-</ion-content>
+</ion-content>-->
+
+
+<div class="panel panel-body">
+  <div class="text-center">
+    <a href="#" class="display-inline-block">
+      <img src="assets/img/offrs-logo-square.png" class="img-circle img-responsive" alt="" style="width: 100px; height: 100px;">
+    </a>
+
+    <h5 class="content-group">Login to your account <small class="display-block">Enter your credentials below</small></h5>
+  </div>
+
+  <form (ngSubmit)="onLoginSubmit()">
+    <div class="form-group has-feedback has-feedback-left">
+      <input type="text" class="form-control" placeholder="Username" name="logEmail" [(ngModel)]="logEmail" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+      <div class="form-control-feedback">
+        <i class="icon-user text-muted"></i>
+      </div>
+    </div>
+
+    <div class="form-group has-feedback has-feedback-left">
+      <input type="password" class="form-control" placeholder="Password" name="logPassword" [(ngModel)]="logPassword" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+      <div class="form-control-feedback">
+        <i class="icon-lock2 text-muted"></i>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 position-right"></i></button>
+    </div>
+  </form>
+
+  <div class="text-center">
+    <a href="login_password_recover.html">Forgot password?</a>
+  </div>
+</div>

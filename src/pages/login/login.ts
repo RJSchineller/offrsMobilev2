@@ -16,7 +16,7 @@ import { Login } from '../../providers/login';
 })
 export class LoginPage {
   homePage = HomePage;
-  registerCredentials = {email: '', password: ''};
+  //registerCredentials = {email: '', password: ''};
 
   logEmail: string;
   logPassword: string;
