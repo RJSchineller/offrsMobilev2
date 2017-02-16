@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class Login {
-  private offrsUrl = 'http://live2.offrs.com/mobileapi/getUser.cfm?';
+  private offrsUrl = 'http://live2.offrs.com/mobileapi/getUser.cfm';
 
   constructor(public http: Http) {
     console.log('Hello Login Provider');
